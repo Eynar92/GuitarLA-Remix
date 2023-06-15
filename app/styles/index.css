@@ -64,22 +64,22 @@ main {
     .barra {
         flex-direction: row;
         justify-content: space-between;
-    }    
+    }
 }
 
-.header .navegacion{
+.header .navegacion {
     display: flex;
     gap: 2rem;
     margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
-    .header .navegacion{
+    .header .navegacion {
         margin-top: 0;
     }
 }
 
-.header .navegacion a{
+.header .navegacion a {
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
@@ -90,6 +90,7 @@ main {
     transition-duration: 300ms;
 }
 
-.header .navegacion a:hover{
+.header .navegacion a:hover,
+.active {
     background-color: var(--primary);
 }
