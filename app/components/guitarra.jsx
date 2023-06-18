@@ -14,7 +14,7 @@ export default function Guitarra({ guitarra }) {
                 <p className="descripcion">{descripcion}</p>
                 <p className="precio">${precio}</p>
 
-                <Link className="enlace" to={`/guitarras/${url}`}>Ver Producto</Link>
+                <Link className="enlace" to={`/guitarra/${url}`}>Ver Producto</Link>
             </div>
         </div>
     )
