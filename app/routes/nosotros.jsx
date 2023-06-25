@@ -1,5 +1,6 @@
 import imagen from '../../public/img/nosotros.jpg'
 import styles from '~/styles/nosotros.css'
+import { useOutletContext } from '@remix-run/react'
 
 export function meta() {
   return [
@@ -23,6 +24,11 @@ export function links() {
 }
 
 function Nosotros() {
+
+  const data = useOutletContext()
+
+  console.log(data);
+
   return (
     <main className="contenedor nosotros">
       <h2 className="heading">Nosotros</h2>
