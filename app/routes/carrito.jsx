@@ -25,6 +25,7 @@ export default function Carrito() {
     <main className="contenedor">
       <h1 className="heading">Carrito de Compras</h1>
 
+
       <div className="contenido">
         <div className="carrito">
           <h2>Articulos</h2>
@@ -38,7 +39,18 @@ export default function Carrito() {
 
                 <div>
                   <p className="nombre">{producto.nombre}</p>
-                  <p>Cantidad: {producto.cantidad}</p>
+                  <p>Cantidad:</p>
+
+                  <select
+                    value={producto.cantidad}
+                    className='select'
+                  >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                  </select>
 
 
                   <p className="precio">$ <span>{producto.precio}</span></p>
